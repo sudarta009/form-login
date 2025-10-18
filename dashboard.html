@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Area Pribadi</title>
+    <link rel="stylesheet" href="CSS/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <h1 id="welcomeTitle"></h1>
+      <p class="welcome-text" id="welcomeMessage"></p>
+      <div id="adminSection" class="dashboard-section hidden">
+        <h2>⚙️ Kontrol Admin</h2>
+        <div class="card-grid">
+          <div class="card status-error">
+            <h3>Pengguna Baru</h3>
+            <p>Total pendaftar hari ini: **45**</p>
+            <a href="#" class="link link-danger">Kelola Pengguna →</a>
+          </div>
+          <div class="card status-alert">
+            <h3>Review Konten</h3>
+            <p>Ada **15** kiriman menunggu moderasi.</p>
+            <a href="#" class="link link-warning color-amber">Lihat Review →</a>
+            <a href="#" class="link link-success color-green">Lihat Log →</a>
+          </div>
+        </div>
+
+        <a href="#" class="link link-success">Lihat Log →</a>
+      </div>
+
+      <div id="userSection" class="dashboard-section hidden">
+        <div class="card-grid">
+          <div class="card status-ok">
+            <h3>Status Langganan</h3>
+            <p>Status: **Premium Aktif** hingga 2026.</p>
+            <a href="#" class="link link-success color-green"
+              >Perbarui Paket →</a
+            >
+          </div>
+          <div class="card status-alert">
+            <h3>Riwayat Transaksi</h3>
+            <p>Transaksi terakhir: Pembelian layanan A.</p>
+            <a href="#" class="link link-warning color-amber"
+              >Perbarui Paket →</a
+            >
+            <p>Lengkapi data untuk 100% verifikasi.</p>
+            <a href="#" class="link color-primary">Edit Profil →</a>
+          </div>
+        </div>
+
+        <a href="#" class="link link-warning">Lihat Semua →</a>
+        <a href="#">Ganti Kata Sandi</a>
+      </div>
+
+      <button class="logout-btn" onclick="logout()">Keluar (Logout)</button>
+    </div>
+
+    <script src="JS/dashboard_script.js"></script>
+  </body>
+</html>

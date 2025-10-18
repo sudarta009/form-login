@@ -1,0 +1,181 @@
+/* Gaya Umum */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Container Login */
+.login-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Input Group dan Label */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Tombol Login */
+#loginButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#loginButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#loginButton:active {
+  transform: translateY(0);
+}
+
+/* Pesan Error (Interaktivitas JS) */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.error-message.show {
+  opacity: 1;
+}
+
+/* Opsi Tambahan */
+.options {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.options a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.options a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Gaya untuk Checkbox Persetujuan */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.checkbox-group .inline-label {
+  display: inline;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.checkbox-group a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.checkbox-group a:hover {
+  text-decoration: underline;
+}
+
+/* Gaya untuk CAPTCHA Box */
+.captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#captchaQuestion {
+  background-color: #e9ecef;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-user-select: none; /* Support Safari 3+, iOS Safari 3+ (Mencegah teks CAPTCHA dipilih/dicopy) */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /* Mencegah teks CAPTCHA dipilih/dicopy */
+  width: 120px; /* Lebar tetap agar soal terlihat jelas */
+  text-align: center;
+}
+
+#captchaAnswer {
+  flex-grow: 1;
+  /* Menggunakan gaya input-group yang sudah ada */
+}

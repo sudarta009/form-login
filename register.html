@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Akun Baru</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <style>
+      /* CSS tambahan untuk mengatur posisi tautan pendaftaran */
+      .register-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+      .register-link a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .register-link a:hover {
+        text-decoration: underline;
+      }
+      .captcha-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <form id="registerForm" class="login-form">
+        <h2>Daftar Akun Baru</h2>
+
+        <div class="input-group">
+          <label for="regUsername">Nama Pengguna</label>
+          <input type="text" id="regUsername" name="username" required />
+        </div>
+
+        <div class="input-group">
+          <label for="regEmail">Alamat Email</label>
+          <input type="email" id="regEmail" name="email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="regPassword">Kata Sandi</label>
+          <input type="password" id="regPassword" name="password" required />
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Konfirmasi Kata Sandi</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Verifikasi Keamanan</label>
+          <div class="captcha-box">
+            <span id="captchaQuestion"></span>
+            <input
+              type="text"
+              id="captchaAnswer"
+              placeholder="Jawab di sini"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="input-group checkbox-group">
+          <input type="checkbox" id="agreeTerms" name="agreeTerms" required />
+          <label for="agreeTerms" class="inline-label"
+            >Saya menyetujui
+            <a href="terms_and_conditions.html" target="_blank"
+              >Syarat dan Ketentuan</a
+            ></label
+          >
+        </div>
+
+        <button type="submit" id="registerButton">Daftar</button>
+        <p class="error-message" id="errorMessage"></p>
+
+        <p class="register-link">
+          Sudah punya akun? <a href="index.html">Login Sekarang</a>
+        </p>
+      </form>
+    </div>
+    <script src="JS/register_script.js"></script>
+  </body>
+</html>
