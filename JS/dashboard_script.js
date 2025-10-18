@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. Verifikasi Otentikasi
   if (!loggedInUser || !userRole) {
     // Jika tidak ada data sesi, paksa logout
-    window.location.href = "index.html";
+    window.location.href = "login.html";
     return;
   }
 
