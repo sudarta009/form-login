@@ -38,5 +38,5 @@ function logout() {
   sessionStorage.removeItem("loggedInUser");
   sessionStorage.removeItem("userRole");
   alert("Anda telah keluar. Sampai jumpa!");
-  window.location.href = "index.html";
+  window.location.href = "login.html";
 }
